@@ -1,0 +1,19 @@
+nav ul li a{
+    text-decoration: none;
+    background-color: #ff8040;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffff;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul{
+    background-color: #b00000;
+    margin: 0px;
+    padding: 25px;
+
+}
