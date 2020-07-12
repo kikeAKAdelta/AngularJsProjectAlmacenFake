@@ -15,5 +15,44 @@ nav ul{
     background-color: #b00000;
     margin: 0px;
     padding: 25px;
-
+    border-radius: 10px;
 }
+
+nav {
+    width: 1200px;
+    margin: auto;
+}
+
+section{
+    width: 1200px;
+    margin: auto;
+}
+
+section article{
+    width: 1000px;
+    margin: 7px auto;
+    background-color: tomato;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer{
+    width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: teal;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section article ul{
+    display: inline-block;
+    width: 500px;
+}
+
+section article ul li{
+    list-style-type: none;
+}
+
+
+

@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="estilos.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-
+    <script src="almacenApp.js"></script>
 </head>
 <body ng-app="almacenApp" ng-controller="controllerAlmacen">
 
     <nav>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Empleados</a></li>
-            <li><a href="">Carrito</a></li>
+            <li><a href="#/!">Home</a></li>
+            <li><a href="#!productos">Productos</a></li>
+            <li><a href="#!empleados">Empleados</a></li>
+            <li><a href="#!carrito">Carrito</a></li>
         </ul>
     </nav>
 
     <div ng-view></div>
+
+    <footer><span>Enrique Arevalo - Conociendo Angular</span></footer>
     
 </body>
 </html>
