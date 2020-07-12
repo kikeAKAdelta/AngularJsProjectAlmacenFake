@@ -54,5 +54,23 @@ section article ul li{
     list-style-type: none;
 }
 
+.miTabla, th , td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+  .miTabla tr td{
+      padding: 15px;;
+  }
+  
+  .miTabla tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  
+  .miTabla tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+
 
 

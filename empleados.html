@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+</head>
+<body>
+    <br>
+    <table class="miTabla">
+        <theader>
+            <td>Nombre</td>
+            <td>Edad</td>
+        </theader> 
+
+        <tr ng-repeat="x in empleado">
+            <td>{{x.employee_name}}</td>
+            <td>{{x.employee_age}}</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
