@@ -15,6 +15,7 @@
                 <p><b>Nombre:</b> {{x.name}}</p>
                 <p><b>Descripcion:</b> {{x.description}}</p>
                 <p><b>Precio:</b> $ {{x.price}} </p>
+                <button ng-click="addCarrito($index+1)" >Agregar Carrito</button>
             </li>
             
         </ul>

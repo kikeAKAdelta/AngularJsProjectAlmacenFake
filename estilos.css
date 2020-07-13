@@ -1,9 +1,10 @@
 nav ul li a{
     text-decoration: none;
-    background-color: #ff8040;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 5px #ff8000;
     color: #ffff;
+    background-color: #008080;
+    border-bottom: 5px solid #fd9902;
 }
 
 nav ul li{
@@ -12,7 +13,7 @@ nav ul li{
 }
 
 nav ul{
-    background-color: #b00000;
+    background-color: #008080; 
     margin: 0px;
     padding: 25px;
     border-radius: 10px;
@@ -31,7 +32,7 @@ section{
 section article{
     width: 1000px;
     margin: 7px auto;
-    background-color: tomato;
+    background-color: #d1d1d1;
     padding: 5px;
     border-radius: 10px;
 }
@@ -70,6 +71,13 @@ section article ul li{
   
   .miTabla tr:nth-child(even) {
     background-color: #ffffff;
+  }
+
+  button{
+      padding: 10px;
+      background-color: #0000ff;
+      border-radius: 5px;
+      color: #fff;
   }
 
 
