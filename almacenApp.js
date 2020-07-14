@@ -39,6 +39,7 @@ appAlmacen.controller("controllerAlmacen", function($scope, $http){
             for(let i in $scope.producto){
                 
                 if($scope.producto[i].id == index){
+
                     console.log(index);
                     console.log($scope.producto[i].id.indexOf(index));
 
@@ -51,22 +52,23 @@ appAlmacen.controller("controllerAlmacen", function($scope, $http){
                         
                     }else {
                         console.log($scope.carrito);
-
+                        let carritoEncontrado = false;
                         for(let j in $scope.carrito){
-                            if($scope.carrito[j].id.indexOf(index) == -1){
+                            if($scope.carrito[j].id == index){
+                                carritoEncontrado = true;
+                            }
+                        }
 
-                                console.log($scope.carrito.length);
+                        if(carritoEncontrado){
+                            console.log("repetido");
+                            $scope.total = $scope.total + parseFloat($scope.carrito[i].price);
+                        }else{
+                            console.log($scope.carrito.length);
                                 $scope.carrito.push($scope.producto[i]);
                                 alert("Has añadido a tu carrito " + $scope.producto[i].name +
                                 " ve a la pestaña de pedido");
                                 $scope.isPedido = false;
-                            }else{
-                                console.log("repetido");
-                                $scope.total = $scope.total + parseFloat($scope.carrito[i].price);
-                            }
                         }
-                        
-
                     }
                     }
                 }
